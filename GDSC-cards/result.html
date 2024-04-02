@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>تهنئة قوقل</title>
+    
+    <style>
+
+        @media screen and(max-width:480px) {
+            .container{
+                padding: 10px;
+            }
+            
+        }
+        *{
+          box-sizing: border-box;
+        }
+        
+            body {
+         min-height: 100vw;
+         min-width: 100vw;
+          background-image:url(./imges/78465959c9d1d8fc5d54aa4ab72fbf9c.jpg);
+         background-repeat: no-repeat;
+          background-size:cover ;
+          background-position: center center ;
+          background-attachment: fixed;
+        
+              font-family: Arial, sans-serif;
+              text-align: center;
+             /* padding: 20px;
+              border: 1px  solid #fff;
+              box-shadow: 0.0 10px  rgb(0, 0, 0,0.1);
+            */
+        
+            }
+            header{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 30px;
+        }
+        
+        header img{
+          width: 400px;
+          height:  auto;
+          margin-left: 10px;
+          margin-top: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 50px;
+            color: #fff;
+        }
+           
+    
+
+
+
+.result {
+    margin-top: 20px;
+}
+
+
+
+        </style>
+
+</head>
+<body>
+
+  <h1>تهنئة العيد من قوقل</h1>
+
+   <div class="result">
+    <img src="" id="resultImage">
+
+   </div>
+    
+   <a href="" download="بطاقة تهنئة من قوقل.png" class="download-btn" id="downloadLink"> تحميل البطاقة</a>
+
+
+   <script>
+    var urlparams=new URLSearchParams(window.location.search);
+     var name =urlparams.get("name");
+     var image =urlparams.get("image");
+
+
+     document.getElementById('resultImage').src=image;
+     document.getElementById('downloadLink').href=image;
+
+   </script>
+
+
+</body>
+</html>

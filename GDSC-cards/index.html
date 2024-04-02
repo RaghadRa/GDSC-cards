@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <title>تهنئة قوقل</title>
+
+
+</head>
+
+<body>
+  <header>
+    <img src="./imges/logo.png" alt="logo">
+  </header>
+
+  <div class="uploader">
+    <h1>اصنع تهنئة العيد مع قوقل</h1><br>
+  
+    <div class="container"><br>
+
+      <br>
+  <div class="frame"></div>
+
+  
+
+  
+  <label  style="color: #fff;">   : الاسم الظاهر على البطاقة </label><br><br>
+  <div class="card-form">
+
+    <input type="text" id="nameInput" placeholder="أدخل اسمك">
+
+    <br>
+    <br>
+
+    
+
+    <label  style="color: #fff;">   : نوع الخط  </label><br><br>
+    <select id="fontSelect"><br>
+
+      <option value="Arial">Arial</option>
+
+      <option value="Times New Roman">Times New Roman</option>
+
+      <option value="Courier New">Courier New</option>
+
+      <option value="Verdana">Verdana</option>
+
+      <option value="Tahoma">Tahoma</option>
+
+     
+
+    </select>
+
+    <br>
+    <br>
+    <label for="fontSelectSize" style="color: #fff;">   :  حجم الخط  </label> <br> <br>
+    <select id="fontSelectSize"><br>
+        <option value="84px">صغير</option>
+        <option value="120px">متوسط</option>
+        <option value="140px">كبير</option>
+    </select>
+
+<br>
+<br>
+    <label  style="color: #fff;">   : تصميم البطاقة   </label><br><br>
+  <br><div class="templates"><br>
+
+    <img class="template" src="./imges/custom_template1.jpg" onclick="selectTemplate('custom_template1.jpg')"> 
+
+    <img class="template" src="./imges/custom_template2.jpg" onclick="selectTemplate('custom_template2.jpg')">
+
+    <img class="template" src="./imges/custom_template3.jpg" onclick="selectTemplate('custom_template3.jpg')">
+
+  </div>
+      <br>
+    <button onclick="generateCard()">إنشاء البطاقة</button><br>
+
+  </div>
+
+  
+
+  <div id="resultContainer" class="result" style="display: none;">
+
+    <img id="resultImage" src="">
+
+    <br>
+
+   <br> <button   onclick="downloadCard()"> تحميل البطاقة</button><br>
+
+  </div>
+
+
+</div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
